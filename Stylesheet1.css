@@ -1,0 +1,357 @@
+﻿body {
+    font-family: "Dosis",cursive;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background-attachment: fixed;
+}
+
+
+header #MyHeader {
+    width: min-content;
+    height: min-content;
+    color: blueviolet;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu li {
+    float: left;
+    position: relative;
+    width: 130px;
+}
+
+.menu ul li ul {
+    display: none;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    background: #333;
+    background-color:#c1e0fd;
+    display: block;
+    color: brown;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    border-bottom: 2px solid brown;
+    border-left: 1px solid #595959;
+    padding: 5px;
+   
+}
+
+.menu ul li ul li a {
+    background: #595959;
+    background-color: #c1e0fd;
+    text-align: left;
+    padding: 5px;
+    border-bottom: 1px solid #333;
+    font-size: .8em;
+}
+
+.menu li a:hover {
+    background: rgb(248,140,0);
+    transition: .5s;
+}
+
+.menu ul li ul li a:hover {
+    padding-left: 15px;
+}
+
+
+
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    border-radius: 35px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-size: 17px;
+}
+
+    button:hover {
+        color: black;
+        transition: 1s;
+    }
+
+h1 {
+    text-align: center;
+}
+
+.esnekResim {
+    width: 45%;
+    height: auto;
+    max-width: 70%;
+}
+
+.iletisimresim {
+    width: 900px;
+    margin: 10px;
+}
+
+.solakaydir {
+    float: left;
+    padding: 0 0 10px 10px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+    section .container {
+        position: relative;
+        width: 800px;
+        height: 500px;
+        background: #d6ade8;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+        section .container .user {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+            section .container .user .imgBx {
+                position: relative;
+                width: 50%;
+                height: 100%;
+                background: #d6ade8;
+                transition: 0.5s;
+            }
+
+                section .container .user .imgBx img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            section .container .user .formBx {
+                position: relative;
+                width: 50%;
+                height: 100%;
+                background: #d6ade8;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 40px;
+                transition: 0.5s;
+            }
+
+                section .container .user .formBx h2 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    color: #555;
+                }
+
+                section .container .user .formBx input {
+                    position: relative;
+                    width: 100%;
+                    padding: 10px;
+                    background: #f5f5f5;
+                    color: #333;
+                    border: none;
+                    box-shadow: none;
+                    margin: 8px 0;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    font-weight: 300;
+                }
+
+                    section .container .user .formBx input[type="submit"] {
+                        max-width: 100px;
+                        background: #677eff;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: 500;
+                        letter-spacing: 1px;
+                        transition: 0.5s;
+                    }
+
+                section .container .user .formBx .signup {
+                    position: relative;
+                    margin-top: 20px;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    color: #555;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                }
+
+                    section .container .user .formBx .signup a {
+                        font-weight: 600;
+                        text-decoration: none;
+                        color: #677eff;
+                    }
+
+        section .container .singupBx {
+            pointer-events: none;
+        }
+
+        section .container.active .singupBx {
+            pointer-events: initial;
+        }
+
+        section .container .singupBx .formBx {
+            left: 100%;
+        }
+
+        section .container.active .singupBx .formBx {
+            left: 0;
+        }
+
+        section .container .singupBx .imgBx {
+            left: -100%;
+        }
+
+        section .container.active .singupBx .imgBx {
+            left: 0;
+        }
+
+/Sağdaki Kutu İçin/
+section .container .singinBx .formBx {
+    left: 0;
+}
+
+section .container.active .singinBx .formBx {
+    left: 100%;
+}
+
+section .container .singinBx .imgBx {
+    left: 0;
+}
+
+section .container.active .singinBx .imgBx {
+    left: -100%;
+}
+
+@media (max-width: 991px) {
+    section .container {
+        max-width: 400px;
+    }
+
+        section .container .imgBx {
+            display: none;
+        }
+
+        section .container .user .formBx {
+            width: 100%;
+        }
+
+     
+}
+
+#boxSearch {
+    max-width: 300px;
+    position: relative;
+}
+
+    #boxSearch .fa-search {
+        position: absolute;
+        top: 14px;
+        left: 12px;
+        font-size: 20px;
+        color: cornflowerblue;
+    }
+
+#search1 {
+    width: 100px;
+    box-sizing: border-box;
+    border: 2px solid cornflowerblue;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 12px 20px 12px 40px;
+    -moz-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+    #search1:focus {
+        width: 100%;
+    }
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+    .rating > input {
+        display: none
+    }
+
+    .rating > label {
+        position: relative;
+        width: 1em;
+        font-size: 6vw;
+        color: #FFD600;
+        cursor: pointer
+    }
+
+        .rating > label::before {
+            content: "\2605";
+            position: absolute;
+            opacity: 0
+        }
+
+        .rating > label:hover:before,
+        .rating > label:hover ~ label:before {
+            opacity: 1 !important
+        }
+
+    .rating > input:checked ~ label:before {
+        opacity: 1
+    }
+
+    .rating:hover > input:checked ~ label:before {
+        opacity: 0.4
+    }
+

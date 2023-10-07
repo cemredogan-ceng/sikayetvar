@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="Stylesheet1.css">
+
+</head>
+
+<body background="https://images.pexels.com/photos/3255761/pexels-photo-3255761.jpeg?auto=compress&cs=tinysrgb&w=600">
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="anasayfa.html">Ana Sayfa</a>
+
+                <ul>
+                    <li><a href="Login.html">Giris Yap</a></li>
+                    <li><a href="Login.html">Üye Ol</a></li>
+                    <li><a href="sikayetEkle.html"> Şikayet Yaz</a></li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="Login.html">Login</a>
+                <ul>
+                    <li><a href="Login.html">Giris Yap</a></li>
+                    <li><a href="Login.html">Üye Ol</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="Profil Bilgisi.html">Profil Bilgisi</a>
+                <ul>
+                    <li><a href="ProfilBilgisiFirma.html">Profil Görüntüle</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="iletisim.html">İletişim</a>
+                <ul>
+                    <li><a href="iletisim.html">linkedin</a></li>
+                    <li><a href="iletisim.html">medium</a></li>
+                    <li><a href="iletisim.html">e-mail</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="sikayetListesi.html">Şikayet Listesi</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+
+        <br />
+        <br />
+        <br />
+        <h1>Şikayetler</h1>
+        <style>
+            h1 {
+                color: black;
+                font-size: 70px;
+                position: center;
+                font-family: 'Times New Roman', Times, serif;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px 2px rgb(157 60 60);
+                margin: 10px;
+            }
+        </style>
+
+        <section id="section-2">
+            <div class="card">
+                <img src="https://files.sikayetvar.com/complaint/2328/23289390/trendyol-awox-demplus-cay-makinesi-3_350x350.jpg" alt="" />
+                <div class="card_deneme">
+                    <h2>Trendyol Awox Demplus Çay Makinesi</h2>
+                    <p>Trendyol'dan 17 aralıkta 1753075521 sipariş numaralı Awox demplus ® çaycı aldık. Ürünün hem ağzı yamulmuş hem demlik yamulmuş.</p>
+                    <p> ŞİKAYET SAHİBİ:Toprak Aydınlar</p>
+                    <p>ŞİKAYET TARİHİ:30.08.2022</p>
+                    <p>ŞİKAYET DURUMU</p>
+                    <h4> Yanıtlandı</h4>
+                    <input id="btn1" type="button" value="Şikayeti kapatmak için tıkla">
+                    <script>
+
+                        btn1.onclick = function () {
+                            this.value = "Şikayet kapandı!!!"
+                        }
+
+                    </script>
+                    <style>
+                        h4 {
+                            color: yellowgreen;
+                        }
+                    </style>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://files.sikayetvar.com/complaint/2322/23228647/trendyol-uzerinden-aldigim-televizyon-ekrani-kirik-cikti-2.jpg" alt="" />
+                <div class="card_deneme">
+                    <h2>Trendyol Üzerinden Aldığım Televizyon Ekranı Kırık Çıktı</h2>
+                    <p>Trendyoldan isdedgrup satıcısından aldığım Altus ® AL43 model televizyon ekranı kutudan  kırık çıktı,servis tutanak tuttu.Ancak hala tarafıma geri dönüş yapılmadı ve gereği yapılmadı.</p>
+                    <p> ŞİKAYET SAHİBİ:Ahmet Tan</p>
+                    <p>ŞİKAYET TARİHİ:10.07.2022</p>
+                    <p>ŞİKAYET DURUMU</p>
+                    <h3> Yanıt Bekleniyor</h3>
+                    <style>
+                        h3 {
+                            color: crimson;
+                        }
+                    </style>
+                    <textarea id="sikayetText" rows="10" cols="40" name="text" placeholder="Cevabınızı buraya girin..."></textarea>
+                    <br />
+                    <input type="submit" value="Gönder" />
+                    <input type="submit" onclick="delete" value="Sil" />
+                    <br />
+                    <input id="btn2" type="button" value="Şikayeti kapatmak için tıkla">
+                    <script>
+
+                        btn2.onclick = function () {
+                            this.value = "Şikayet kapandı!!!"
+                        }
+
+                    </script>
+                </div>
+
+            </div>
+
+          
+        </section>
+
+        <style>
+
+            #section-2 {
+                display: flex;
+                justify-content: space-around;
+                margin: 5px 0 0 0;
+            }
+
+            .card {
+                width: 30%;
+                box-shadow: 0 5px 9px 0 rgba(0,0,0,0.4);
+                border-radius: 6px;
+            }
+
+                .card:hover {
+                    opacity: 0.7;
+                }
+
+            .card_deneme {
+                padding: 5px 20px
+            }
+
+                .card_deneme p {
+                    margin: 15px 0;
+                }
+
+            img {
+                border-radius: 6px 6px 0 0;
+                width: 100%;
+            }
+
+            p {
+                font-size: 19px;
+            }
+        </style>
+
+
+        <section id="section-3">
+            <div class="card">
+                <img src="data:image/png;base64,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" alt="" />
+                <div class="card_deneme">
+                    <h2>Trendyol Siparişin İptali Yapılıp Paranın Tekrar Yatırılmaması</h2>
+                    <p>
+                        Trendyol'dan bir sweatshirt sipariş ettim siparişi geri iptal ettik paranın yatacağını söylediler ama 3 hafta oldu ve para hâlâ yatmadı ulaşmaya çalıştık ama ulaşamadık bir yerlere yönlendiler ama hiçbir sonuç alamadım umarım artık konuyla ilgilenilir
+                    </p>
+                    <p> ŞİKAYET SAHİBİ:Selim Ay</p>
+                    <p>ŞİKAYET TARİHİ:12.02.2022</p>
+                    <p>ŞİKAYET DURUMU</p>
+                    <h3> Yanıt Bekleniyor</h3>
+                    <style>
+                        h3 {
+                            color: crimson;
+                        }
+                    </style>
+                    <textarea id="sikayetText" rows="10" cols="40" name="text" placeholder="Cevabınızı buraya girin..."></textarea>
+                    <br />
+                    <input type="submit" value="Gönder" />
+                    <input type="submit" onclick="delete" value="Sil" />
+                    <br />
+                    <input id="btn3" type="button" value="Şikayeti kapatmak için tıkla">
+                    <script>
+
+                        btn3.onclick = function () {
+                            this.value = "Şikayet kapandı!!!"
+                        }
+
+                    </script>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="data:image/png;base64,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" alt="" />
+                <div class="card_deneme">
+                    <h2>Trendyol Teslim Edilmeyen Ürün</h2>
+                    <p>Sipariş verdiğim ürün teslim edildi olarak görülmekte ancak teslimat yapılmamıştır. Müşteri temsilcisi 5 iş günü içinde çözüleceğini belirtmekte beni suçum olmayan bir durumdan neden 5 iş günü beklemek zorundayım. Trendyol'un kargo teslimatı konusunda tarafıma yeterince destek vermemiştir</p>
+                    <p> ŞİKAYET SAHİBİ:Ceren Cerengil</p>
+                    <p>ŞİKAYET TARİHİ:01.01.2022</p>
+                    <p>ŞİKAYET DURUMU</p>
+                    <h4> Yanıtlandı</h4>
+                    <style>
+                        h4 {
+                            color: yellowgreen;
+                        }
+                    </style>
+                    <input id="btn4" type="button" value="Şikayeti kapatmak için tıkla">
+                    <script>
+
+                        btn4.onclick = function () {
+                            this.value = "Şikayet kapandı!!!"
+                        }
+
+                    </script>
+                </div>
+
+        </section>
+
+        <style>
+
+            #section-3 {
+                display: flex;
+                justify-content: space-around;
+                margin: 5px 0 0 0;
+            }
+
+            .card {
+                width: 30%;
+                box-shadow: 0 5px 9px 0 rgba(0,0,0,0.4);
+                border-radius: 6px;
+            }
+
+                .card:hover {
+                    opacity: 0.7;
+                }
+
+            .card_deneme {
+                padding: 5px 20px
+            }
+
+                .card_deneme p {
+                    margin: 15px 0;
+                }
+
+            img {
+                border-radius: 6px 6px 0 0;
+                width: 100%;
+            }
+
+            p {
+                font-size: 19px;
+            }
+        </style>
+
+
+
+    </main>
+
+</body>
+</html>

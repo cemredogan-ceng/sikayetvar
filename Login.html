@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="Stylesheet1.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body background="https://images.pexels.com/photos/3255761/pexels-photo-3255761.jpeg?auto=compress&cs=tinysrgb&w=600">
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="anasayfa.html">Ana Sayfa</a>
+
+                <ul>
+                    <li><a href="Login.html">Giris Yap</a></li>
+                    <li><a href="Login.html">Üye Ol</a></li>
+                    <li><a href="sikayetEkle.html"> Şikayet Yaz</a></li>
+
+                </ul>
+
+            </li>
+            <li>
+                <a href="login.html">Login</a>
+                <ul>
+                    <li><a href="Login.html">Giris Yap</a></li>
+                    <li><a href="Login.html">Üye Ol</a></li>
+
+                </ul>
+            </li>
+            
+            <li>
+                <a href="iletisim.html">İletişim</a>
+                <ul>
+                    <li><a href="iletisim.html">linkedin</a></li>
+                    <li><a href="iletisim.html">medium</a></li>
+                    <li><a href="iletisim.html">e-mail</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="sikayetListesi.html">Şikayet Liste</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <br />
+        <br />
+        <br />
+        <h1>Giriş yap veya üye ol</h1>
+        <section>
+            <script type="text/javascript">
+                function toggleForm() {
+                    var container = document.querySelector('.container');
+                    container.classList.toggle('active')
+                }</script>
+            <div class="container">
+                <!--Giriş Yap Formu-->
+                <div class="user singinBx">
+                    <div class="imgBx"><img src="https://media.istockphoto.com/id/1180187740/tr/foto%C4%9Fraf/%C3%A7izgilerle-ba%C4%9Flanan-kalabal%C4%B1%C4%9F%C4%B1n-havadan-g%C3%B6r%C3%BCn%C3%BCm%C3%BC.jpg?s=612x612&w=0&k=20&c=dw5rdRnD4iGNMny5GwUBkKnLXIWbM_9qQeuXGdBF1Us="></div>
+                    <div class="formBx">
+                        <form>
+                            <h2>Giriş Yap</h2>
+                            <br />
+                            <select id="select_id" onchange="val()">
+                                <option id="non" value="non">Seçiniz...</option>
+                                <option value="Kullanici">Kullanıcı Girişi</option>
+                                <option value="Firma">Firma Girişi</option>
+                            </select>
+                            <br />
+                            <br />
+                            <input type="text" name="" placeholder="Kullanıcı Adı">
+                            <input type="password" name="" placeholder="Şifrenizi Girin">
+                            <button type="button" onClick="location.href='ProfilBilgisiKullanıcı.html'">Giriş Yap</button>
+                            <script>
+                                function val() {
+                                    var d = document.getElementById("select_id").value;
+                                    if (d == "Kullanici") {
+                                        window.location.href = "anasayfaKullanıcı.html";
+                                    }
+                                    if (d == "Firma") {
+                                        window.location.href = "anasayfaFirma.html"
+                                    }
+                                }
+
+                            </script>
+                            <p class="signup"><a href="#" onclick="toggleForm();">Hesabın Varsa Hemen Giriş Yap</a></p>
+                        </form>
+                    </div>
+                </div>
+
+                <!--Kayıt Ol Formu-->
+                <div class="user singupBx">
+                    <div class="formBx">
+                        <form>
+                            <h2>Kayıt Ol</h2>
+                            <input type="text" name="" placeholder="Kullanıcı Adınızı Girin">
+                            <input type="email" name="" placeholder="Email Adresinizi Girin">
+                            <input type="password" name="" placeholder="Şifrenizi Girin">
+                            <input type="password" name="" placeholder="Şifrenizi Tekrarlayın">
+                            <input type="submit" name="" value="Kayıt Ol">
+                            <p class="signup"><a href="#" onclick="toggleForm();">Hesabınız Yoksa Hemen Kayıt Olun</a></p>
+                        </form>
+                    </div>
+                    <div class="imgBx"><img src="https://media.istockphoto.com/id/1180187740/tr/foto%C4%9Fraf/%C3%A7izgilerle-ba%C4%9Flanan-kalabal%C4%B1%C4%9F%C4%B1n-havadan-g%C3%B6r%C3%BCn%C3%BCm%C3%BC.jpg?s=612x612&w=0&k=20&c=dw5rdRnD4iGNMny5GwUBkKnLXIWbM_9qQeuXGdBF1Us="></div>
+                </div>
+            </div>
+        </section>
+        <style>
+            h1 {
+                color: black;
+                font-size: 90px;
+                position: center;
+                font-family: 'Times New Roman', Times, serif
+            }
+        </style>
+
+
+        <style>
+            h1 {
+                color: black;
+                font-size: 70px;
+                position: center;
+                font-family: 'Times New Roman', Times, serif;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px 2px rgb(157 60 60);
+                margin: 10px;
+                width: 100%;
+            }
+        </style>
+
+        <style>
+            h1 {
+                color: black;
+                font-size: 70px;
+                position: center;
+                font-family: 'Times New Roman', Times, serif;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px 2px rgb(157 60 60);
+                margin: 10px;
+                width: 100%;
+            }
+        </style>
+        <style>
+            h1 {
+                color: black;
+                font-size: 70px;
+                position: center;
+                font-family: 'Times New Roman', Times, serif;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px 2px rgb(157 60 60);
+                margin: 10px;
+                width: 100%;
+            }
+        </style>
+
+        <style>
+            p {
+                width: 100%;
+            }
+        </style>
+
+
+    </main>
+</body>
+</html>

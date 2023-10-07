@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="Stylesheet1.css">
+</head>
+<body background="https://images.pexels.com/photos/3255761/pexels-photo-3255761.jpeg?auto=compress&cs=tinysrgb&w=600">
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="anasayfa.html">Ana Sayfa</a>
+
+                <ul>
+                    <li><a href="Login.html">Giris Yap</a></li>
+                    <li><a href="Login.html">Üye Ol</a></li>
+                    <li><a href="sikayetEkle.html"> Şikayet Yaz</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="login.html">Login</a>
+                <ul>
+                    <li><a href="Login.html">Giris Yap</a></li>
+                    <li><a href="Login.html">Üye Ol</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="Profil Bilgisi.html">Profil Bilgisi</a>
+                <ul>
+                    <li><a href="Profil Bilgisi.html">Profil Görüntüle</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="iletisim.html">İletişim</a>
+                <ul>
+                    <li><a href="iletisim.html">linkedin</a></li>
+                    <li><a href="iletisim.html">medium</a></li>
+                    <li><a href="iletisim.html">e-mail</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="sikayetListesi.html">Şikayet Liste</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <br />
+        <br />
+        <br />
+        <p id="asd">Şikayetinizi yazmak istediğiniz firmanın ismini seçip yazmaya başlayabilirsiniz.</p>
+        <br />
+        <br />
+        <br />
+        <form action="sikayetEkle.html" method="GET">
+            <input list="sikayetlistesi" />
+            <datalist id="sikayetlistesi">
+                <select>
+                    <option value="Madame Coco">Madame Coco</option>
+                    <option value="Trendyol">Trendyol</option>
+                    <option value="Flavus">Flavus</option>
+                    <option value="Tefal">Tefal</option>
+                    <option value="Aras Kargo">Aras Kargo</option>
+                    <option value="Nespresso">Nespresso</option>
+                    <option value="Everest">Everest</option>
+                    <option value="Zara">Zara</option>
+                    <option value="Gratis">Gratis</option>
+                </select>
+            </datalist>
+            <style>
+                select {
+                    width: 165px;
+                    height: 30px;
+                }
+            </style>
+            <br />
+            <br />
+
+            <br />
+            <br />
+            <br />
+
+            <textarea id="sikayetText" rows="10" cols="80" name="text" placeholder="Şikayetinizi yazmaya başlayın..."></textarea>
+            <br />
+            <input type="submit" value="Gönder"  />
+            <input type="submit" onclick="delete" value="Sil" />
+           
+
+        </form>
+
+
+    </main>
+</body>
+</html>
